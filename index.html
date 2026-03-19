@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Meridian | Interior Architecture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-layer" aria-hidden="true"></div>
+    <header class="topbar">
+      <p class="brand">Atelier Meridian</p>
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#materials">Materials</a>
+        <a href="#contact">Consultation</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <video autoplay muted loop playsinline preload="metadata">
+            <source src="interior_design.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Boutique Interior Architecture</p>
+          <h1>Residences and hospitality spaces designed like private galleries.</h1>
+          <p class="lead">
+            We orchestrate stone, timber, light, and silence into interiors with lasting
+            character.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-solid btn-primary-hero" href="#contact">Start a private brief</a>
+            <a class="btn btn-tertiary" href="#projects">View portfolio</a>
+          </div>
+          <dl class="metrics">
+            <div>
+              <dt>Completed projects</dt>
+              <dd>74</dd>
+            </div>
+            <div>
+              <dt>Average delivery window</dt>
+              <dd>19 weeks</dd>
+            </div>
+            <div>
+              <dt>Cities represented</dt>
+              <dd>11</dd>
+            </div>
+          </dl>
+        </div>
+        <a
+          class="hero-scroll-indicator"
+          href="#exploded-journey"
+          aria-label="Scroll to exploded design journey section"
+        >
+          <span class="scroll-wheel" aria-hidden="true"></span>
+          <span class="scroll-chevron" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <section id="exploded-journey" class="explode-story reveal">
+        <div class="explode-layout">
+          <div class="explode-visual-shell">
+            <div class="explode-visual">
+              <video id="exploding-video" muted playsinline preload="auto">
+                <source src="interior_design_exploding.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="explode-progress" aria-hidden="true">
+              <span id="explode-progress-fill"></span>
+            </div>
+          </div>
+          <div class="explode-copy">
+            <article class="explode-step is-active" data-step="0">
+              <p class="explode-index">01</p>
+              <h3>Spatial Intelligence</h3>
+              <p>
+                We begin with circulation mapping and daylight vectors so every axis in the
+                layout carries intent, not ornament.
+              </p>
+            </article>
+            <article class="explode-step" data-step="1">
+              <p class="explode-index">02</p>
+              <h3>Material Precision</h3>
+              <p>
+                Joinery reveals, stone edges, and lighting seams are engineered as a single
+                language, creating depth without visual noise.
+              </p>
+            </article>
+            <article class="explode-step" data-step="2">
+              <p class="explode-index">03</p>
+              <h3>Execution Discipline</h3>
+              <p>
+                The exploding sequence reflects our delivery system: components lock in by
+                sequence, with craftsmanship controlled at every installation stage.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="manifesto reveal">
+        <p>
+          Every project begins with choreography. How daylight lands on plaster at 08:00.
+          How footfall softens across hand-finished oak. How conversation gathers around a
+          low travertine edge.
+        </p>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Selected Work</p>
+          <h2>A calibrated balance between restraint and material richness.</h2>
+        </div>
+        <div id="project-shell" class="project-shell" aria-live="polite">
+          <div class="skeleton-grid">
+            <article class="skeleton-card skeleton-tall"></article>
+            <article class="skeleton-card"></article>
+            <article class="skeleton-card"></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="materials" class="section material-studio reveal">
+        <div class="section-head">
+          <p class="eyebrow">Material Direction</p>
+          <h2>Palette studies prepared for bespoke commissions.</h2>
+        </div>
+        <div class="chip-track" aria-label="Material references">
+          <span>Ribbed smoked oak</span>
+          <span>Brushed limestone</span>
+          <span>Champagne bronze</span>
+          <span>Linen acoustic panel</span>
+          <span>Fumed mirror</span>
+          <span>Hand-troweled limewash</span>
+          <span>Veined travertine</span>
+        </div>
+      </section>
+
+      <section class="section process reveal">
+        <div class="section-head">
+          <p class="eyebrow">Process</p>
+          <h2>Three deliberate phases.</h2>
+        </div>
+        <div class="process-grid">
+          <article>
+            <h3>Spatial Audit</h3>
+            <p>Light mapping, circulation study, and architectural opportunity framing.</p>
+          </article>
+          <article>
+            <h3>Material Prototyping</h3>
+            <p>Mockups of junctions, finishes, and tactile contrasts before procurement.</p>
+          </article>
+          <article>
+            <h3>White-Glove Delivery</h3>
+            <p>Installer oversight, styling cadence, and post-completion calibration.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact reveal">
+        <div class="section-head">
+          <p class="eyebrow">Private Consultation</p>
+          <h2>Share the brief for your next interior transformation.</h2>
+        </div>
+        <form id="consultation-form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" />
+            <p class="field-note">How should we address you?</p>
+            <p class="field-error" id="name-error"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+            <p class="field-note">Project communication is sent here.</p>
+            <p class="field-error" id="email-error"></p>
+          </div>
+          <div class="field">
+            <label for="scope">Project scope</label>
+            <textarea id="scope" name="scope" rows="4"></textarea>
+            <p class="field-note">Include city, timeline, and property type.</p>
+            <p class="field-error" id="scope-error"></p>
+          </div>
+          <button id="submit-btn" class="btn btn-solid" type="submit">Send brief</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <p>Atelier Meridian</p>
+      <p>Chicago | New York | London</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
